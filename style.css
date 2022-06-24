@@ -1,82 +1,176 @@
+
 body
 {
-    background: url(https://sun9-27.userapi.com/impg/dBRmW93Hs4gm0zj_XUVmG5DIiKwY_BuxHK8-pw/ZRLFYqYgcnM.jpg?size=1280x720&quality=96&sign=a8bb55783be45cb50c598b0b4369c0f0&type=album);
-    max-width: 1000px;
-    min-width: 1000px;
+    background-color: rgb(120, 128, 136);
+    width: 1100px;
     margin: 0 auto;
-    margin-top: 60px;
-    font-family: Georgia, 'Times New Roman', Times, serif ;
-    
-}
-
-.conteiner
-{
-    background:white;
-    box-shadow: 3px 3px 30px black;
-    margin: 0 auto;
-    display: flex;
-    padding: 5px;
-    width: 100%;
-    background-clip: content-box;
-    border-radius: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-weight: 700;
+    margin-top: 60px; 
 }
 
 a
 {
-    font-size: 18px;
-    color: Black;
     text-decoration: none;
+    color: black;
 }
 
 a:hover
 {
-    color: blue;
+    text-decoration: underline;
 }
 
-.me
+.woodfound
 {
-    padding: 15px;
-    background: rgba(80, 79, 75, 0.384);
-    border: 5px solid black;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    padding: 20px;
+    border: 1px solid;
+    background-image: url(assets/img/wood.jpg);
+    box-shadow: 4px 4px 20px #0c0d0e;
+    border-radius: 20px;
 }
 
-.me2
+.conteiner
 {
-    background: white;
-    text-align: justify;
-    padding: 15px;
-    float: right;
-    border-top: 5px solid black;
-    border-right: 5px solid black;
-    border-bottom: 5px solid black;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border: 2px solid;
+    min-height: 700px;  
+    padding: 3px;
+    padding-left: 60px;
+    background: url(https://img.freepik.com/free-photo/white-watercolor-papar-texture-background-cover-card-design-overlay-aon-paint-art-background_1962-2191.jpg?w=2000);
+    box-shadow: 1px 1px 20px #0c0d0e;
+    position: relative;
 }
 
-.image
+.spiral
 {
-    width: 200px;
-    border-radius: 25px;
-    box-shadow: 3px 3px 10px black;
-    margin-left: 6px;
+    transform: translate(-160px, 20px);
+    position: absolute;
 }
 
 
-.cont
+/*header start*/
+header
 {
-    margin-left: 0px;
-    padding-left: 0px;
-    list-style-type: none;
-    font-size: 19px;
-    text-align: left;
+    align-items: center;
+}
+
+header ul
+{
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around
+}
+
+header li
+{
+    display: inline;
+}
+
+header li:last-child
+{
+   margin-right: 30px;
+}
+
+.me img
+{
+    width: 330px;
+    border-radius: 100%;
+    box-shadow: 0 0 15px;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.myself
+{
+    width: 55%;
+}
+
+.contacts li
+{
+    border-bottom: none;
+    list-style: none;
+    padding-left: 15px;
+    margin-right: 50px;
+}
+
+.contacts li:nth-child(2)
+{
+   margin-right: 45px;
+}
+
+.contacts ul
+{
+    display: flex;
+    flex-direction: row;
+}
+
+/*sections start*/
+.section1 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2
+{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.section3
+{
+    display: flex;
+    flex-direction: row;
 }
 
 
-.date
+/*main start*/
+main
 {
-    font-size: 20px;
-    margin: 0;
-    float: right;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+main li
+{
+    list-style: square;
+    border-bottom: 2px solid;
+    margin-bottom: 10px;
+    height: 10%;
+}
+
+.strengths
+{
+    width: 50%;
+}
+
+.skills
+{
+    width: 40%;
+    padding-left: 50px;
+}
+
+.education
+{
+    width: 50%;
+}
+
+.languages
+{
+    width: 40%;
+    padding-left: 50px;
+}
+
+.languages li
+{
+    margin-bottom: 10px;
+}
+
+/*footer start*/
+footer
+{
+    position: absolute; 
+    bottom: 0;
+    right: 65px;
 }
